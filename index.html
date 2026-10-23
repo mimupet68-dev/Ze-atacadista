@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#123b70"><meta name="description" content="Loja online Zé Atacadista - produtos para pets">
+<link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/icon.svg" type="image/svg+xml">
+<title>Zé Atacadista | Loja Pet</title><link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header><div class="brand"><span class="mark">ZÉ</span><div><h1>Zé Atacadista</h1><small>Seu parceiro em produtos pet</small></div></div><button id="cartBtn">Carrinho <b id="cartCount">0</b></button></header>
+<main>
+<section class="hero"><p class="eyebrow">LOJA ONLINE</p><h2>Produtos para quem cuida de pets.</h2><p>Escolha os produtos e envie seu pedido em poucos passos.</p><input id="search" placeholder="Buscar produto..." aria-label="Buscar produto"></section>
+<section class="toolbar"><h2>Catálogo</h2><span id="status">Carregando produtos…</span></section>
+<section id="products" class="products"></section>
+<section id="cartPanel" class="panel hidden"><div class="panelhead"><h2>Seu pedido</h2><button id="closeCart" class="light">Fechar</button></div><div id="cartItems"></div><h3>Total: <span id="total">R$ 0,00</span></h3>
+<form id="orderForm"><label>Seu nome<input name="customer_name" required maxlength="100"></label><label>WhatsApp<input name="phone" required maxlength="30" placeholder="(11) 99999-9999"></label><label>Endereço / observações<textarea name="notes" maxlength="500" placeholder="Informe entrega ou retirada e outras observações"></textarea></label><button class="primary" type="submit">Enviar pedido</button><p class="muted">O pedido será registrado na loja. O pagamento será combinado após a confirmação.</p></form></section>
+<section class="admin"><details><summary>Área administrativa (configuração de testes)</summary><p>Para administrar produtos e pedidos, configure as credenciais públicas do Supabase em <code>config.js</code> e aplique as políticas do arquivo <code>supabase-schema.sql</code>. A área administrativa completa será habilitada após a criação de um usuário administrador.</p><p><strong>Não coloque a chave service_role no navegador.</strong></p></details></section>
+</main><footer>© <span id="year"></span> Zé Atacadista · Loja online</footer>
+<script src="/config.js"></script><script type="module" src="/app.js"></script>
+</body></html>
