@@ -1,0 +1,10 @@
+{
+  "name": "Zé Atacadista",
+  "short_name": "Zé Atacadista",
+  "description": "Loja online de produtos pet",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f7fb",
+  "theme_color": "#123b70",
+  "icons": [{"src":"/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
